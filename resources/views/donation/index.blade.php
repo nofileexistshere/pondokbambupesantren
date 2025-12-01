@@ -17,7 +17,10 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-3 gap-8 text-center">
             <div>
-                <div class="text-4xl font-bold text-emerald-600 mb-2">Rp {{ number_format($totalDonation, 0, ',', '.') }}</div>
+                <div class="text-4xl font-bold text-emerald-600 mb-2">
+                    <span class="hidden sm:inline">Rp {{ number_format($totalDonation, 0, ',', '.') }}</span>
+                    <span class="sm:hidden">Rp {{ format_number_short($totalDonation) }}</span>
+                </div>
                 <div class="text-gray-600">Total Donasi Terkumpul</div>
             </div>
             <div>
@@ -62,10 +65,16 @@
                 <div class="border-t border-gray-200 pt-4 mb-4">
                     <div class="flex justify-between items-center mb-2">
                         <span class="text-xs text-gray-500">Terkumpul</span>
-                        <span class="font-semibold text-gray-800">Rp {{ number_format($campaign->current_amount, 0, ',', '.') }}</span>
+                        <span class="font-semibold text-gray-800">
+                            <span class="hidden sm:inline">Rp {{ number_format($campaign->current_amount, 0, ',', '.') }}</span>
+                            <span class="sm:hidden">Rp {{ format_number_short($campaign->current_amount) }}</span>
+                        </span>
                     </div>
                     <div class="flex justify-between items-center">
-                        <span class="text-xs text-gray-500">dari Rp {{ number_format($campaign->target_amount, 0, ',', '.') }}</span>
+                        <span class="text-xs text-gray-500">
+                            <span class="hidden sm:inline">dari Rp {{ number_format($campaign->target_amount, 0, ',', '.') }}</span>
+                            <span class="sm:hidden">dari Rp {{ format_number_short($campaign->target_amount) }}</span>
+                        </span>
                     </div>
                 </div>
 

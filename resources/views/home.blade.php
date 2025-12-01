@@ -120,7 +120,7 @@
         
         <div class="grid md:grid-cols-2 gap-6">
             @foreach($programs as $index => $program)
-            <a href="{{ route('programs.show', $program->slug) }}" class="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition {{ $index === 0 ? 'md:row-span-2' : '' }}">
+            <a href="{{ route('registration.create', ['program' => $program->slug]) }}" class="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition {{ $index === 0 ? 'md:row-span-2' : '' }}">
                 <div class="relative {{ $index === 0 ? 'h-[500px]' : 'h-[240px]' }} overflow-hidden">
                     <img src="{{ $program->image ?? 'https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800' }}" alt="{{ $program->name }}" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
@@ -131,7 +131,7 @@
                         <h3 class="text-2xl font-bold mb-3">{{ $program->name }}</h3>
                         <p class="text-white/90 text-sm mb-4 line-clamp-2">{{ $program->description }}</p>
                         <div class="text-white font-medium flex items-center">
-                            Selengkapnya
+                            Daftar Program Ini
                             <svg class="w-5 h-5 ml-2 group-hover:translate-x-2 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                             </svg>
