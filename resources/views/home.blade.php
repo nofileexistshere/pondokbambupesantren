@@ -4,7 +4,7 @@
 
 @section('content')
 <!-- Hero Section -->
-<section class="bg-hero min-h-screen flex items-center">
+<section class="bg-hero min-h-screen flex items-center pt-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
         <div class="inline-block bg-white/20 backdrop-blur-sm px-6 py-2 rounded-full mb-6">
             <span class="text-sm font-medium">Pesantren Modern Terpercaya</span>

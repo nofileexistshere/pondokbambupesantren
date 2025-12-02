@@ -83,7 +83,7 @@
             </div>
             
             <!-- Mobile menu -->
-            <div id="mobile-menu" class="hidden md:hidden pb-4">
+            <div id="mobile-menu" class="hidden md:hidden pb-4 bg-white">
                 <div class="flex flex-col space-y-3">
                     <a href="{{ route('home') }}" class="mobile-nav-link text-emerald-700 hover:text-emerald-600 font-medium transition px-4 py-2">Beranda</a>
                     <a href="{{ route('news.index') }}" class="mobile-nav-link text-emerald-700 hover:text-emerald-600 font-medium transition px-4 py-2">Berita</a>
@@ -227,6 +227,7 @@
         const logoSubtext = document.getElementById('logo-subtext');
         const mobileMenuBtn = document.getElementById('mobile-menu-button').querySelector('svg');
         const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+        const mobileMenuDiv = document.getElementById('mobile-menu');
         const navLinks = [
             document.getElementById('nav-link-1'),
             document.getElementById('nav-link-2'),
@@ -246,15 +247,18 @@
             logoSubtext.classList.add('text-gray-300');
             mobileMenuBtn.classList.remove('text-emerald-700');
             mobileMenuBtn.classList.add('text-white');
+            // Keep mobile menu white always
+            mobileMenuDiv.classList.add('bg-white');
             navLinks.forEach(link => {
                 if (link) {
                     link.classList.remove('text-emerald-700', 'hover:text-emerald-600');
                     link.classList.add('text-white', 'hover:text-emerald-300');
                 }
             });
+            // Mobile nav links stay dark for readability on white background
             mobileNavLinks.forEach(link => {
-                link.classList.remove('text-emerald-700', 'hover:text-emerald-600');
-                link.classList.add('text-white', 'hover:text-emerald-300');
+                link.classList.remove('text-white', 'hover:text-emerald-300');
+                link.classList.add('text-emerald-700', 'hover:text-emerald-600');
             });
         }
         // Other pages keep the default white navbar from HTML
@@ -278,10 +282,7 @@
                             link.classList.add('text-emerald-700', 'hover:text-emerald-600');
                         }
                     });
-                    mobileNavLinks.forEach(link => {
-                        link.classList.remove('text-white', 'hover:text-emerald-300');
-                        link.classList.add('text-emerald-700', 'hover:text-emerald-600');
-                    });
+                    // Mobile nav links stay dark for readability
                 } else {
                     // At top - transparent with white text
                     navbar.classList.remove('bg-white', 'shadow-sm');
@@ -298,10 +299,7 @@
                             link.classList.remove('text-emerald-700', 'hover:text-emerald-600');
                         }
                     });
-                    mobileNavLinks.forEach(link => {
-                        link.classList.add('text-white', 'hover:text-emerald-300');
-                        link.classList.remove('text-emerald-700', 'hover:text-emerald-600');
-                    });
+                    // Mobile nav links stay dark for readability
                 }
             });
         }
