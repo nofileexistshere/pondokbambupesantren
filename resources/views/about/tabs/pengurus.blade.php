@@ -10,7 +10,7 @@
         <div class="grid md:grid-cols-4 gap-8 mb-16">
             <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition">
                 <div class="relative">
-                    <img src="https://readdy.ai/api/search-image?query=Indonesian%20senior%20Islamic%20scholar%20with%20turban%20and%20traditional%20attire%2C%20wise%20elderly%20man%2C%20portrait&width=300&height=400&seq=kiai&orientation=portrait" alt="KH. Ahmad Dahlan" class="w-full h-64 object-cover">
+                    <img src="https://readdy.ai/api/search-image?query=wise%20elderly%20indonesian%20islamic%20scholar%20wearing%20white%20turban%20and%20traditional%20islamic%20clothing%20with%20gentle%20smile%20and%20kind%20eyes%20against%20simple%20neutral%20background%20portrait%20photography%20professional%20lighting&width=400&height=500&seq=kyai1&orientation=portrait" alt="KH. Ahmad Dahlan" class="w-full h-64 object-cover">
                     <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-emerald-900 to-transparent p-4">
                         <h3 class="text-white font-bold text-lg">KH. Ahmad Dahlan</h3>
                         <p class="text-emerald-200 text-sm">Pengasuh Pesantren</p>
@@ -23,7 +23,7 @@
 
             <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition">
                 <div class="relative">
-                    <img src="https://readdy.ai/api/search-image?query=Indonesian%20Islamic%20male%20teacher%20in%20white%20Islamic%20attire%2C%20professional%20portrait%2C%20young%20educator&width=300&height=400&seq=ustadz1&orientation=portrait" alt="Ustadz Dr. Muhammad Ridwan" class="w-full h-64 object-cover">
+                    <img src="https://readdy.ai/api/search-image?query=professional%20indonesian%20male%20islamic%20teacher%20wearing%20white%20cap%20and%20formal%20islamic%20attire%20with%20warm%20smile%20and%20confident%20expression%20against%20simple%20neutral%20background%20portrait%20photography%20professional%20lighting&width=400&height=500&seq=ustadz1&orientation=portrait" alt="Ustadz Dr. Muhammad Ridwan" class="w-full h-64 object-cover">
                     <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-emerald-900 to-transparent p-4">
                         <h3 class="text-white font-bold text-lg">Ustadz Dr. Muhammad Ridwan, M.Pd.I</h3>
                         <p class="text-emerald-200 text-sm">Direktur Pendidikan</p>
@@ -36,7 +36,7 @@
 
             <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition">
                 <div class="relative">
-                    <img src="https://readdy.ai/api/search-image?query=Indonesian%20Islamic%20female%20teacher%20wearing%20hijab%2C%20professional%20portrait%2C%20young%20educator&width=300&height=400&seq=ustadzah1&orientation=portrait" alt="Ustadzah Siti Aminah" class="w-full h-64 object-cover">
+                    <img src="https://readdy.ai/api/search-image?query=professional%20indonesian%20female%20islamic%20teacher%20wearing%20elegant%20hijab%20and%20formal%20islamic%20attire%20with%20warm%20smile%20and%20professional%20demeanor%20against%20simple%20neutral%20background%20portrait%20photography%20professional%20lighting&width=400&height=500&seq=ustadzah1&orientation=portrait" alt="Ustadzah Siti Aminah" class="w-full h-64 object-cover">
                     <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-emerald-900 to-transparent p-4">
                         <h3 class="text-white font-bold text-lg">Ustadzah Siti Aminah, S.Pd.I</h3>
                         <p class="text-emerald-200 text-sm">Kepala Bagian Putri</p>
@@ -49,7 +49,7 @@
 
             <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition">
                 <div class="relative">
-                    <img src="https://readdy.ai/api/search-image?query=Indonesian%20Islamic%20male%20teacher%20young%20man%20in%20white%20attire%2C%20professional%20portrait&width=300&height=400&seq=ustadz2&orientation=portrait" alt="Ustadz Hasan Basri" class="w-full h-64 object-cover">
+                    <img src="https://readdy.ai/api/search-image?query=young%20professional%20indonesian%20male%20quran%20teacher%20wearing%20white%20cap%20and%20traditional%20islamic%20clothing%20with%20focused%20expression%20and%20gentle%20demeanor%20against%20simple%20neutral%20background%20portrait%20photography%20professional%20lighting&width=400&height=500&seq=ustadz2&orientation=portrait" alt="Ustadz Hasan Basri" class="w-full h-64 object-cover">
                     <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-emerald-900 to-transparent p-4">
                         <h3 class="text-white font-bold text-lg">Ustadz Hasan Basri, Lc</h3>
                         <p class="text-emerald-200 text-sm">Koordinator Tahfidz</p>
