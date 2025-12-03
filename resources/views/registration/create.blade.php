@@ -261,7 +261,7 @@
                     </div>
 
                     <label class="flex items-center mb-6 cursor-pointer">
-                        <input type="checkbox" required class="w-5 h-5 text-emerald-600 rounded mr-3">
+                        <input type="checkbox" required id="confirmCheck" class="w-5 h-5 text-emerald-600 rounded mr-3">
                         <span class="text-gray-700">
                             Saya menyatakan bahwa data yang saya berikan adalah benar dan dapat dipertanggungjawabkan
                         </span>
@@ -420,6 +420,25 @@
 
         document.getElementById('summary').innerHTML = summary;
     }
+
+    document.addEventListener('DOMContentLoaded', () => {
+    const check = document.getElementById('confirmCheck');
+    const submitBtn = document.getElementById('submitBtn');
+
+    check.addEventListener('change', () => {
+        submitBtn.disabled = !check.checked;
+
+        if (check.checked) {
+            submitBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+        } else {
+            submitBtn.classList.add('opacity-50', 'cursor-not-allowed');
+        }
+    });
+
+    submitBtn.disabled = true;
+    submitBtn.classList.add('opacity-50', 'cursor-not-allowed');
+});
+
 </script>
 @endpush
 @endsection
