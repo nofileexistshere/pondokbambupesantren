@@ -7,6 +7,7 @@ use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
+use Filament\Tables\Columns\ImageColumn;
 
 class StudentRegistrationsTable
 {
@@ -34,14 +35,18 @@ class StudentRegistrationsTable
                 TextColumn::make('program_id')
                     ->numeric()
                     ->sortable(),
-                TextColumn::make('photo')
-                    ->searchable(),
-                TextColumn::make('birth_certificate')
-                    ->searchable(),
-                TextColumn::make('family_card')
-                    ->searchable(),
-                TextColumn::make('health_certificate')
-                    ->searchable(),
+                ImageColumn::make('photo')
+                    ->disk('public')
+                    ->square(),
+                ImageColumn::make('birth_certificate')
+                    ->disk('public')
+                    ->square(),
+                ImageColumn::make('family_card')
+                    ->disk('public')
+                    ->square(),
+                ImageColumn::make('health_certificate')
+                    ->disk('public')
+                    ->square(),
                 TextColumn::make('status')
                     ->searchable(),
                 TextColumn::make('submitted_at')
