@@ -36,16 +36,16 @@ class StudentRegistrationsTable
                     ->numeric()
                     ->sortable(),
                 ImageColumn::make('photo')
-                    ->disk('public')
+                    ->disk('uploads')
                     ->square(),
                 ImageColumn::make('birth_certificate')
-                    ->disk('public')
+                    ->disk('uploads')
                     ->square(),
                 ImageColumn::make('family_card')
-                    ->disk('public')
+                    ->disk('uploads')
                     ->square(),
                 ImageColumn::make('health_certificate')
-                    ->disk('public')
+                    ->disk('uploads')
                     ->square(),
                 TextColumn::make('status')
                     ->searchable(),

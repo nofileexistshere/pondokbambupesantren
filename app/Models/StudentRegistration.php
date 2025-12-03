@@ -34,6 +34,33 @@ class StudentRegistration extends Model
         'verified_at' => 'datetime',
     ];
 
+    protected $appends = [
+        'photo_url',
+        'birth_certificate_url',
+        'family_card_url',
+        'health_certificate_url',
+    ];
+
+    public function getPhotoUrlAttribute()
+    {
+        return $this->photo ? asset('uploads/' . $this->photo) : null;
+    }
+
+    public function getBirthCertificateUrlAttribute()
+    {
+        return $this->birth_certificate ? asset('uploads/' . $this->birth_certificate) : null;
+    }
+
+    public function getFamilyCardUrlAttribute()
+    {
+        return $this->family_card ? asset('uploads/' . $this->family_card) : null;
+    }
+
+    public function getHealthCertificateUrlAttribute()
+    {
+        return $this->health_certificate ? asset('uploads/' . $this->health_certificate) : null;
+    }
+
     public function program()
     {
         return $this->belongsTo(Program::class);

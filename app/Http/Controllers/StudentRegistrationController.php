@@ -39,16 +39,16 @@ class StudentRegistrationController extends Controller
 
         // Handle file uploads
         if ($request->hasFile('photo')) {
-            $validated['photo'] = $request->file('photo')->store('registrations/photos', 'public');
+            $validated['photo'] = $request->file('photo')->store('registrations/photos', 'uploads');
         }
         if ($request->hasFile('birth_certificate')) {
-            $validated['birth_certificate'] = $request->file('birth_certificate')->store('registrations/documents', 'public');
+            $validated['birth_certificate'] = $request->file('birth_certificate')->store('registrations/documents', 'uploads');
         }
         if ($request->hasFile('family_card')) {
-            $validated['family_card'] = $request->file('family_card')->store('registrations/documents', 'public');
+            $validated['family_card'] = $request->file('family_card')->store('registrations/documents', 'uploads');
         }
         if ($request->hasFile('health_certificate')) {
-            $validated['health_certificate'] = $request->file('health_certificate')->store('registrations/documents', 'public');
+            $validated['health_certificate'] = $request->file('health_certificate')->store('registrations/documents', 'uploads');
         }
 
         $validated['submitted_at'] = now();
