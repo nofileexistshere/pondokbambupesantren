@@ -56,6 +56,6 @@ class StudentRegistrationController extends Controller
 
         StudentRegistration::create($validated);
 
-        return redirect()->route('home')->with('success', 'Pendaftaran berhasil! Kami akan menghubungi Anda segera.');
+        return redirect()->back()->with('success', 'Kami akan menghubungi Anda segera.');
     }
 }

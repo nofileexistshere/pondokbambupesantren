@@ -320,6 +320,17 @@
     let currentStep = 1;
     const totalSteps = 5;
 
+    @if(session('success'))
+        document.addEventListener("DOMContentLoaded", () => {
+            Swal.fire({
+                title: "Pendaftaran Berhasil!",
+                text: "{{ session('success') }}",
+                icon: "success",
+                confirmButtonColor: "#10b981"
+            });
+        });
+    @endif
+
     function changeStep(direction) {
         // Validate current step before moving
         if (direction === 1 && !validateStep(currentStep)) {
@@ -440,5 +451,6 @@
 });
 
 </script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 @endpush
 @endsection
