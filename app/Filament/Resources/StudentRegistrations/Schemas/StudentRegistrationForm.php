@@ -7,6 +7,7 @@ use Filament\Forms\Components\DateTimePicker;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Textarea;
 use Filament\Schemas\Schema;
+use Filament\Forms\Components\FileUpload;
 
 class StudentRegistrationForm
 {
@@ -37,10 +38,31 @@ class StudentRegistrationForm
                     ->numeric(),
                 Textarea::make('program_notes')
                     ->columnSpanFull(),
-                TextInput::make('photo'),
-                TextInput::make('birth_certificate'),
-                TextInput::make('family_card'),
-                TextInput::make('health_certificate'),
+                FileUpload::make('photo')
+                    ->disk('public')
+                    ->directory('registrations/photos')
+                    ->image()
+                    ->visibility('public')
+                    ->preserveFilenames()
+                    ->required(),
+                FileUpload::make('birth_certificate')
+                    ->disk('public')
+                    ->visibility('public')
+                    ->directory('registrations/documents')
+                    ->preserveFilenames()
+                    ->required(),
+                FileUpload::make('family_card')
+                    ->disk('public')
+                    ->visibility('public')
+                    ->directory('registrations/documents')
+                    ->preserveFilenames()
+                    ->required(),
+                FileUpload::make('health_certificate')
+                    ->disk('public')
+                    ->visibility('public')
+                    ->directory('registrations/documents')
+                    ->preserveFilenames()
+                    ->required(),
                 TextInput::make('status')
                     ->required()
                     ->default('pending'),
