@@ -49,13 +49,15 @@
             <div class="flex justify-between h-20">
                 <div class="flex items-center">
                     <div class="flex-shrink-0 flex items-center">
-                        <div id="logo-bg" class="p-2 mr-3">
-                            <img 
-                                src="{{ asset('logo/logo-panjang.png') }}" 
-                                alt="Logo" 
-                                class="h-[70px] object-contain"
-                            >
-                        </div>
+                        <a href="/" class="flex items-center">
+                            <div id="logo-bg" class="p-2 mr-3">
+                                <img 
+                                    src="{{ asset('logo/logo-panjang.png') }}" 
+                                    alt="Logo" 
+                                    class="h-[70px] object-contain"
+                                >
+                            </div>
+                        </a>
                         <div>
                             <h1 id="logo-text" class="text-xl font-bold text-emerald-600"></h1>
                             <p id="logo-subtext" class="text-xs text-emerald-400"></p>
